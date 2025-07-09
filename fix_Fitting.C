@@ -20,7 +20,7 @@ void fix_Fitting() {
 //    slope.setConstant(true);
 //    RooExponential expo("expo", "expo", x, slope);
 
-    RooRealVar c0("c0", "c0", -0.825192);// -0.825192 Chebychev line
+    RooRealVar c0("c0", "c0", -0.939952);// -0.825192 Chebychev line
     c0.setConstant(true);                // -0.939952, 0.317173 Chebychev second order
     RooRealVar c1("c1", "c1", 0.317173); // -0.0378565  exponential slope
     c1.setConstant(true);
