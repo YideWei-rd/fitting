@@ -24,7 +24,6 @@ df = ROOT.RDataFrame(ch)
 total = df.Count().GetValue()
 total_h = ROOT.TH1D("total_h", "total_h", 1, 0, 1)
 total_h.SetBinContent(1, total)
-#df = ROOT.RDataFrame(treename, "/home/jth155/instanton1/CMSSW_10_6_29/src/Multilepton/RootTupleMaker/analysisTree.root") # for a single file, one can also do this.
 
 # define custom fuctions
 ROOT.gInterpreter.Declare('#include "analyzer.h"')
@@ -60,9 +59,6 @@ df = df.Define("rejectedVertices", "create_listOfRejectedVertices(IsGoodRecoVert
 df = df.Define("rejectedVertices_size","rejectedVertices.size()")
 df = df.Filter("rejectedVertices_size > 0","rejectedVertices_size > 0")
 
-# reject vertices plots
-# df = df.Define("numRejectedVertices","std::count(rejectedVertices.begin(), rejectedVertices.end(), true)")
-# numRV = df.Histo1D(("numRejectedVertices","numRejectedVertices", 20, 0, 20), "numRejectedVertices")
 df = df.Define("numAcceptedVertices","std::count(rejectedVertices.begin(), rejectedVertices.end(), false)")
 accepted_vertices = df.Sum("numAcceptedVertices")
 
@@ -120,26 +116,11 @@ output_path = "test"
 if not os.path.exists(output_path):
     os.makedirs(output_path)
 
-# output_root_file = os.path.join(output_path,"zanalysisTree.root")
-# df.Snapshot("tree", output_root_file, columns_to_save)
-
-
-
-# Plot
-#ROOT.gStyle.SetOptStat('emruo')
-#ROOT.gStyle.SetTextFont(42)
-#c = ROOT.TCanvas("c", "", 800, 700)
-#c.SetLogx(0)
-#c.SetLogy(0)
-
 rootfile_path = os.path.join(output_path, "histos.root")
 rootfile = ROOT.TFile(rootfile_path, "RECREATE")
 total_h.Write()
 for histo in h:
     histo.Draw("HIST")
-    # c.SaveAs('{}.pdf'.format(histo.GetTitle()))
-    #save_path = os.path.join(output_path, '{}.pdf'.format(histo.GetTitle()))
-    #c.SaveAs(save_path)
     histo.Write()
 # Print report on cutflow 
 print('\n*****Cutflow Report*****')
