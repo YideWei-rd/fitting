@@ -72,7 +72,7 @@ df = df.Filter("isGoodMuon_size > 1", "isGoodMuon_size > 1")
 
 # Selects muons with pt>10, iso<0.1, |eta|<2.5                  
 df = df.Define("goodMuonPtIsoEta","select_muons_ptIsoEta(isGoodMuon,VLMuonPt, 10., MuonIso03, 0.1, VLMuonEta, 2.5)")
-df = df.Define("goodMuonPtIsoEta_size","goodMuonPtIsoEta.size()")
+df = df.Define("goodMuonPtIsoEta_size","std::count(goodMuonPtIsoEta.begin(), goodMuonPtIsoEta.end(), true)")
 df = df.Filter("goodMuonPtIsoEta_size > 1","goodMuonPtIsoEta_size > 1")
 
 # note: add id cut VLMuonPOGIDBit passPOGIDCutBasedLoose
