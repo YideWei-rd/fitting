@@ -89,8 +89,7 @@ df = df.Filter("NumOfPairsTracksOpCharge > 0","num of pairs op charge > 0")
 # Calculates the invariant mass of each pair of tracks that meet the requirements, sorts the values by descending order, stores in a vector called InvMassVector
 df = df.Define("InvMassVector","track_inv_mass(SelectedPairsOpCharge, VLMuonPt, VLMuonEta, VLMuonPhi)")
 df = df.Define("InvMass","InvMassVector[0].second")
-df = df.Filter("InvMass >= 75","InvMass >= 75")
-df = df.Filter("InvMass <= 105","InvMass <= 105")
+df = df.Filter("InvMass >= 80 && InvMass <= 100","80 <=InvMass <= 100")
 
 invmass = df.Histo1D(("InvMass","InvMass", 60, 60, 120), "InvMass")
 

@@ -105,8 +105,7 @@ mass_ss_hist = df1.Histo1D(("Mass_SameSignPairs", "Mass_bkg", 120, 0, 120), "Dim
 df = df.Define("InvMassVector","track_inv_mass(SelectedPairsOpCharge, VLMuonPt, VLMuonEta, VLMuonPhi)")
 df = df.Define("InvMass","InvMassVector[0].second")
 invmass = df.Histo1D(("InvMass","InvMass", 120, 0, 120), "InvMass")
-df = df.Filter("InvMass >= 75","InvMass >= 75")
-df = df.Filter("InvMass <= 105","InvMass <= 105")
+df = df.Filter("InvMass >= 80 && InvMass <= 100","80 <= InvMass <= 100")
 
 h=[invmass, mass_ss_hist] # this is the list to hold our histos, for easier plotting later.
 
