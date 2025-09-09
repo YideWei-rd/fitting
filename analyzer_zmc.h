@@ -154,12 +154,12 @@ std::vector<bool> create_listOfRejectedVertices(const ROOT::VecOps::RVec<int> &i
                                                 const ROOT::VecOps::RVec<float>& muonPhi, 
                                                 const ROOT::VecOps::RVec<int>& muonVert) {
   std::vector<bool> rejectedVertices(sumpt.size());
-//   for (int i = 0; i < rejectedVertices.size(); i++) {
-//     if (select_goodvertices(i, isgoodvertex)) rejectedVertices[i] = true;
-//     else if (sumpt_filter(i, sumpt, vectorsumpt)) rejectedVertices[i] = true;
-//     else if (numTrackPerVertex_filter(i, trackNByVert)) rejectedVertices[i] = true;
-//     else if (reVertexingFilter(i, c1size, c2size, c1chi2, c1dof, c2chi2, c2dof, tchi2, tdof)) rejectedVertices[i] = true;
-//   }
+   for (int i = 0; i < rejectedVertices.size(); i++) {
+     if (select_goodvertices(i, isgoodvertex)) rejectedVertices[i] = true;
+     else if (sumpt_filter(i, sumpt, vectorsumpt)) rejectedVertices[i] = true;
+     else if (numTrackPerVertex_filter(i, trackNByVert)) rejectedVertices[i] = true;
+     else if (reVertexingFilter(i, c1size, c2size, c1chi2, c1dof, c2chi2, c2dof, tchi2, tdof)) rejectedVertices[i] = true;
+   }
   
 
   return rejectedVertices;

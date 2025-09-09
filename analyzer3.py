@@ -91,9 +91,9 @@ df = df.Filter("pairsMuonsPtAsymmetry_size > 0","pairsMuonsPtAsymmetry_size > 0"
 # Creates a vector called SelectedPairsOpCharge that holds the pairs of indices of tracks that have opposite charge
 df = df.Define("SelectedPairsOpCharge","idx_0f_trackpairs_opcharge(pairsMuonsPtAsymmetry, VLMuonCharge)")
 df = df.Define("NumOfPairsTracksOpCharge","SelectedPairsOpCharge.size()")
-df = df.Define("SelectedPairsSpCharge","idx_0f_trackpairs_spcharge(pairsMuonsPtAsymmetry, VLMuonCharge)")
-df = df.Define("NumOfPairsTracksSpCharge","SelectedPairsSpCharge.size()")
-df1 = df.Filter("NumOfPairsTracksSpCharge > 0","num of pairs sp charge > 0")
+df = df.Define("SelectedPairsSameCharge","idx_0f_trackpairs_samecharge(pairsMuonsPtAsymmetry, VLMuonCharge)")
+df = df.Define("NumOfPairsTracksSameCharge","SelectedPairsSameCharge.size()")
+df1 = df.Filter("NumOfPairsTracksSameCharge > 0","num of pairs same charge > 0")
 df = df.Filter("NumOfPairsTracksOpCharge > 0","num of pairs op charge > 0")
 
 

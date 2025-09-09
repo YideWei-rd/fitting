@@ -257,7 +257,7 @@ std::vector<std::pair<int,int>> idx_0f_trackpairs_opcharge(const std::vector<std
   return vec;
 }
 
-std::vector<std::pair<int,int>> idx_0f_trackpairs_spcharge(const std::vector<std::pair<int,int>> &trackPairs, const ROOT::VecOps::RVec<int> &charge) {
+std::vector<std::pair<int,int>> idx_0f_trackpairs_samecharge(const std::vector<std::pair<int,int>> &trackPairs, const ROOT::VecOps::RVec<int> &charge) {
   std::vector<pair<int,int>> vec;
   for (int i = 0; i < trackPairs.size(); ++i) {
     int idx1 = trackPairs[i].first;

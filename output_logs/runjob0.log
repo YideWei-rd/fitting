@@ -1,0 +1,490 @@
+000 (188050.000.000) 2025-09-03 10:05:13 Job submitted from host: <192.168.1.120:9618?addrs=192.168.1.120-9618&alias=ruhex-hn2.hexfarm.rutgers.edu&noUDP&sock=schedd_6240_b30f>
+...
+040 (188050.000.000) 2025-09-03 10:05:14 Started transferring input files
+	Transferring to host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=slot1_1_4887_1560_163376>
+...
+040 (188050.000.000) 2025-09-03 10:05:14 Finished transferring input files
+...
+001 (188050.000.000) 2025-09-03 10:05:15 Job executing on host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=startd_4884_e90b>
+...
+006 (188050.000.000) 2025-09-03 10:05:23 Image size of job updated: 310616
+	304  -  MemoryUsage of job (MB)
+	310616  -  ResidentSetSize of job (KB)
+...
+006 (188050.000.000) 2025-09-03 10:08:43 Image size of job updated: 921140
+	304  -  MemoryUsage of job (MB)
+	310616  -  ResidentSetSize of job (KB)
+...
+040 (188050.000.000) 2025-09-03 10:08:43 Started transferring output files
+...
+040 (188050.000.000) 2025-09-03 10:08:43 Finished transferring output files
+...
+005 (188050.000.000) 2025-09-03 10:08:43 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:03:23, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:03:23, Sys 0 00:00:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1951  -  Run Bytes Sent By Job
+	33515  -  Run Bytes Received By Job
+	1951  -  Total Bytes Sent By Job
+	33515  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        1         1 
+	   Disk (KB)            :   899          35   1567297 
+	   Memory (MB)          :   304           1       128 
+
+	Job terminated of its own accord at 2025-09-03T14:08:43Z with exit-code 0.
+...
+000 (188156.000.000) 2025-09-04 22:45:39 Job submitted from host: <192.168.1.120:9618?addrs=192.168.1.120-9618&alias=ruhex-hn2.hexfarm.rutgers.edu&noUDP&sock=schedd_6240_b30f>
+...
+040 (188156.000.000) 2025-09-04 22:45:42 Started transferring input files
+	Transferring to host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=slot1_1_4887_1560_163665>
+...
+040 (188156.000.000) 2025-09-04 22:45:42 Finished transferring input files
+...
+001 (188156.000.000) 2025-09-04 22:45:43 Job executing on host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=startd_4884_e90b>
+...
+006 (188156.000.000) 2025-09-04 22:45:51 Image size of job updated: 594432
+	218  -  MemoryUsage of job (MB)
+	222648  -  ResidentSetSize of job (KB)
+...
+006 (188156.000.000) 2025-09-04 22:46:04 Image size of job updated: 921240
+	218  -  MemoryUsage of job (MB)
+	222648  -  ResidentSetSize of job (KB)
+...
+040 (188156.000.000) 2025-09-04 22:46:04 Started transferring output files
+...
+040 (188156.000.000) 2025-09-04 22:46:04 Finished transferring output files
+...
+005 (188156.000.000) 2025-09-04 22:46:04 Job terminated.
+	(1) Normal termination (return value 54)
+		Usr 0 00:00:12, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:12, Sys 0 00:00:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	2003  -  Run Bytes Sent By Job
+	21498  -  Run Bytes Received By Job
+	2003  -  Total Bytes Sent By Job
+	21498  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :      881       25   1567297 
+	   Memory (MB)          :      218        1       128 
+
+	Job terminated of its own accord at 2025-09-05T02:46:04Z with exit-code 54.
+...
+000 (188158.000.000) 2025-09-04 23:30:00 Job submitted from host: <192.168.1.120:9618?addrs=192.168.1.120-9618&alias=ruhex-hn2.hexfarm.rutgers.edu&noUDP&sock=schedd_6240_b30f>
+...
+040 (188158.000.000) 2025-09-04 23:30:00 Started transferring input files
+	Transferring to host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=slot1_1_4887_1560_163729>
+...
+040 (188158.000.000) 2025-09-04 23:30:00 Finished transferring input files
+...
+001 (188158.000.000) 2025-09-04 23:30:01 Job executing on host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=startd_4884_e90b>
+...
+006 (188158.000.000) 2025-09-04 23:30:10 Image size of job updated: 669628
+	288  -  MemoryUsage of job (MB)
+	294560  -  ResidentSetSize of job (KB)
+...
+006 (188158.000.000) 2025-09-04 23:30:25 Image size of job updated: 907668
+	288  -  MemoryUsage of job (MB)
+	294568  -  ResidentSetSize of job (KB)
+...
+040 (188158.000.000) 2025-09-04 23:30:25 Started transferring output files
+...
+040 (188158.000.000) 2025-09-04 23:30:25 Finished transferring output files
+...
+005 (188158.000.000) 2025-09-04 23:30:25 Job terminated.
+	(1) Normal termination (return value 54)
+		Usr 0 00:00:17, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:17, Sys 0 00:00:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	2003  -  Run Bytes Sent By Job
+	21520  -  Run Bytes Received By Job
+	2003  -  Total Bytes Sent By Job
+	21520  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :      881       25   1567297 
+	   Memory (MB)          :      288        1       128 
+
+	Job terminated of its own accord at 2025-09-05T03:30:25Z with exit-code 54.
+...
+000 (188159.000.000) 2025-09-04 23:32:04 Job submitted from host: <192.168.1.120:9618?addrs=192.168.1.120-9618&alias=ruhex-hn2.hexfarm.rutgers.edu&noUDP&sock=schedd_6240_b30f>
+...
+040 (188159.000.000) 2025-09-04 23:32:20 Started transferring input files
+	Transferring to host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=slot1_1_4887_1560_163730>
+...
+040 (188159.000.000) 2025-09-04 23:32:20 Finished transferring input files
+...
+001 (188159.000.000) 2025-09-04 23:32:21 Job executing on host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=startd_4884_e90b>
+...
+006 (188159.000.000) 2025-09-04 23:32:30 Image size of job updated: 899592
+	335  -  MemoryUsage of job (MB)
+	342568  -  ResidentSetSize of job (KB)
+...
+006 (188159.000.000) 2025-09-04 23:32:36 Image size of job updated: 899592
+	335  -  MemoryUsage of job (MB)
+	342872  -  ResidentSetSize of job (KB)
+...
+040 (188159.000.000) 2025-09-04 23:32:36 Started transferring output files
+...
+040 (188159.000.000) 2025-09-04 23:32:37 Finished transferring output files
+...
+005 (188159.000.000) 2025-09-04 23:32:37 Job terminated.
+	(1) Normal termination (return value 54)
+		Usr 0 00:00:12, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:12, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	2003  -  Run Bytes Sent By Job
+	21520  -  Run Bytes Received By Job
+	2003  -  Total Bytes Sent By Job
+	21520  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :      881       25   1567297 
+	   Memory (MB)          :      335        1       128 
+
+	Job terminated of its own accord at 2025-09-05T03:32:36Z with exit-code 54.
+...
+000 (188160.000.000) 2025-09-04 23:42:24 Job submitted from host: <192.168.1.120:9618?addrs=192.168.1.120-9618&alias=ruhex-hn2.hexfarm.rutgers.edu&noUDP&sock=schedd_6240_b30f>
+...
+040 (188160.000.000) 2025-09-04 23:42:27 Started transferring input files
+	Transferring to host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=slot1_1_4887_1560_163731>
+...
+040 (188160.000.000) 2025-09-04 23:42:27 Finished transferring input files
+...
+001 (188160.000.000) 2025-09-04 23:42:28 Job executing on host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=startd_4884_e90b>
+...
+006 (188160.000.000) 2025-09-04 23:42:36 Image size of job updated: 603396
+	224  -  MemoryUsage of job (MB)
+	229188  -  ResidentSetSize of job (KB)
+...
+006 (188160.000.000) 2025-09-04 23:42:45 Image size of job updated: 921240
+	225  -  MemoryUsage of job (MB)
+	229512  -  ResidentSetSize of job (KB)
+...
+040 (188160.000.000) 2025-09-04 23:42:45 Started transferring output files
+...
+040 (188160.000.000) 2025-09-04 23:42:45 Finished transferring output files
+...
+005 (188160.000.000) 2025-09-04 23:42:45 Job terminated.
+	(1) Normal termination (return value 54)
+		Usr 0 00:00:12, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:12, Sys 0 00:00:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	2001  -  Run Bytes Sent By Job
+	21630  -  Run Bytes Received By Job
+	2001  -  Total Bytes Sent By Job
+	21630  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :      881       25   1567297 
+	   Memory (MB)          :      225        1       128 
+
+	Job terminated of its own accord at 2025-09-05T03:42:45Z with exit-code 54.
+...
+000 (188161.000.000) 2025-09-04 23:44:37 Job submitted from host: <192.168.1.120:9618?addrs=192.168.1.120-9618&alias=ruhex-hn2.hexfarm.rutgers.edu&noUDP&sock=schedd_6240_b30f>
+...
+040 (188161.000.000) 2025-09-04 23:44:46 Started transferring input files
+	Transferring to host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=slot1_1_4887_1560_163732>
+...
+040 (188161.000.000) 2025-09-04 23:44:46 Finished transferring input files
+...
+001 (188161.000.000) 2025-09-04 23:44:47 Job executing on host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=startd_4884_e90b>
+...
+006 (188161.000.000) 2025-09-04 23:44:56 Image size of job updated: 898752
+	333  -  MemoryUsage of job (MB)
+	340244  -  ResidentSetSize of job (KB)
+...
+006 (188161.000.000) 2025-09-04 23:45:02 Image size of job updated: 898752
+	335  -  MemoryUsage of job (MB)
+	342804  -  ResidentSetSize of job (KB)
+...
+040 (188161.000.000) 2025-09-04 23:45:02 Started transferring output files
+...
+040 (188161.000.000) 2025-09-04 23:45:02 Finished transferring output files
+...
+005 (188161.000.000) 2025-09-04 23:45:02 Job terminated.
+	(1) Normal termination (return value 54)
+		Usr 0 00:00:12, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:12, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	2003  -  Run Bytes Sent By Job
+	21630  -  Run Bytes Received By Job
+	2003  -  Total Bytes Sent By Job
+	21630  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :      881       25   1567297 
+	   Memory (MB)          :      335        1       128 
+
+	Job terminated of its own accord at 2025-09-05T03:45:02Z with exit-code 54.
+...
+000 (188162.000.000) 2025-09-05 01:33:50 Job submitted from host: <192.168.1.120:9618?addrs=192.168.1.120-9618&alias=ruhex-hn2.hexfarm.rutgers.edu&noUDP&sock=schedd_6240_b30f>
+...
+040 (188162.000.000) 2025-09-05 01:33:50 Started transferring input files
+	Transferring to host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=slot1_1_4887_1560_163733>
+...
+040 (188162.000.000) 2025-09-05 01:33:50 Finished transferring input files
+...
+001 (188162.000.000) 2025-09-05 01:33:51 Job executing on host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=startd_4884_e90b>
+...
+006 (188162.000.000) 2025-09-05 01:33:57 Image size of job updated: 407996
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+040 (188162.000.000) 2025-09-05 01:33:57 Started transferring output files
+...
+040 (188162.000.000) 2025-09-05 01:33:57 Finished transferring output files
+...
+005 (188162.000.000) 2025-09-05 01:33:57 Job terminated.
+	(1) Normal termination (return value 2)
+		Usr 0 00:00:02, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:02, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	3649  -  Run Bytes Sent By Job
+	21626  -  Run Bytes Received By Job
+	3649  -  Total Bytes Sent By Job
+	21626  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :      879       25   1567297 
+	   Memory (MB)          :        0        1       128 
+
+	Job terminated of its own accord at 2025-09-05T05:33:57Z with exit-code 2.
+...
+000 (188163.000.000) 2025-09-05 01:36:43 Job submitted from host: <192.168.1.120:9618?addrs=192.168.1.120-9618&alias=ruhex-hn2.hexfarm.rutgers.edu&noUDP&sock=schedd_6240_b30f>
+...
+040 (188163.000.000) 2025-09-05 01:36:43 Started transferring input files
+	Transferring to host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=slot1_1_4887_1560_163734>
+...
+040 (188163.000.000) 2025-09-05 01:36:43 Finished transferring input files
+...
+001 (188163.000.000) 2025-09-05 01:36:44 Job executing on host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=startd_4884_e90b>
+...
+006 (188163.000.000) 2025-09-05 01:36:53 Image size of job updated: 314800
+	305  -  MemoryUsage of job (MB)
+	311788  -  ResidentSetSize of job (KB)
+...
+006 (188163.000.000) 2025-09-05 01:37:00 Image size of job updated: 921228
+	305  -  MemoryUsage of job (MB)
+	311844  -  ResidentSetSize of job (KB)
+...
+040 (188163.000.000) 2025-09-05 01:37:00 Started transferring output files
+...
+040 (188163.000.000) 2025-09-05 01:37:00 Finished transferring output files
+...
+005 (188163.000.000) 2025-09-05 01:37:00 Job terminated.
+	(1) Normal termination (return value 54)
+		Usr 0 00:00:12, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:12, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	2003  -  Run Bytes Sent By Job
+	21630  -  Run Bytes Received By Job
+	2003  -  Total Bytes Sent By Job
+	21630  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :      881       25   1567297 
+	   Memory (MB)          :      305        1       128 
+
+	Job terminated of its own accord at 2025-09-05T05:37:00Z with exit-code 54.
+...
+000 (188164.000.000) 2025-09-05 01:56:18 Job submitted from host: <192.168.1.120:9618?addrs=192.168.1.120-9618&alias=ruhex-hn2.hexfarm.rutgers.edu&noUDP&sock=schedd_6240_b30f>
+...
+040 (188164.000.000) 2025-09-05 01:56:19 Started transferring input files
+	Transferring to host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=slot1_1_4887_1560_163735>
+...
+040 (188164.000.000) 2025-09-05 01:56:19 Finished transferring input files
+...
+001 (188164.000.000) 2025-09-05 01:56:20 Job executing on host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=startd_4884_e90b>
+...
+006 (188164.000.000) 2025-09-05 01:56:28 Image size of job updated: 595256
+	218  -  MemoryUsage of job (MB)
+	223004  -  ResidentSetSize of job (KB)
+...
+006 (188164.000.000) 2025-09-05 01:56:37 Image size of job updated: 921168
+	218  -  MemoryUsage of job (MB)
+	223004  -  ResidentSetSize of job (KB)
+...
+040 (188164.000.000) 2025-09-05 01:56:37 Started transferring output files
+...
+040 (188164.000.000) 2025-09-05 01:56:37 Finished transferring output files
+...
+005 (188164.000.000) 2025-09-05 01:56:37 Job terminated.
+	(1) Normal termination (return value 54)
+		Usr 0 00:00:12, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:12, Sys 0 00:00:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	2002  -  Run Bytes Sent By Job
+	21630  -  Run Bytes Received By Job
+	2002  -  Total Bytes Sent By Job
+	21630  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :      881       25   1567297 
+	   Memory (MB)          :      218        1       128 
+
+	Job terminated of its own accord at 2025-09-05T05:56:37Z with exit-code 54.
+...
+000 (188165.000.000) 2025-09-05 02:10:40 Job submitted from host: <192.168.1.120:9618?addrs=192.168.1.120-9618&alias=ruhex-hn2.hexfarm.rutgers.edu&noUDP&sock=schedd_6240_b30f>
+...
+040 (188165.000.000) 2025-09-05 02:10:40 Started transferring input files
+	Transferring to host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=slot1_1_4887_1560_163736>
+...
+040 (188165.000.000) 2025-09-05 02:10:40 Finished transferring input files
+...
+001 (188165.000.000) 2025-09-05 02:10:41 Job executing on host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=startd_4884_e90b>
+...
+006 (188165.000.000) 2025-09-05 02:10:49 Image size of job updated: 596544
+	220  -  MemoryUsage of job (MB)
+	224380  -  ResidentSetSize of job (KB)
+...
+006 (188165.000.000) 2025-09-05 02:15:45 Image size of job updated: 921268
+	220  -  MemoryUsage of job (MB)
+	224380  -  ResidentSetSize of job (KB)
+...
+040 (188165.000.000) 2025-09-05 02:15:45 Started transferring output files
+...
+040 (188165.000.000) 2025-09-05 02:15:45 Finished transferring output files
+...
+005 (188165.000.000) 2025-09-05 02:15:45 Job terminated.
+	(1) Normal termination (return value 54)
+		Usr 0 00:03:17, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:03:17, Sys 0 00:00:05  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	2004  -  Run Bytes Sent By Job
+	33647  -  Run Bytes Received By Job
+	2004  -  Total Bytes Sent By Job
+	33647  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.65        1         1 
+	   Disk (KB)            :   899          35   1567297 
+	   Memory (MB)          :   220           1       128 
+
+	Job terminated of its own accord at 2025-09-05T06:15:45Z with exit-code 54.
+...
+000 (188933.000.000) 2025-09-08 02:54:09 Job submitted from host: <192.168.1.120:9618?addrs=192.168.1.120-9618&alias=ruhex-hn2.hexfarm.rutgers.edu&noUDP&sock=schedd_6240_b30f>
+...
+040 (188933.000.000) 2025-09-08 02:54:14 Started transferring input files
+	Transferring to host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=slot1_3_4887_1560_164208>
+...
+040 (188933.000.000) 2025-09-08 02:54:14 Finished transferring input files
+...
+001 (188933.000.000) 2025-09-08 02:54:15 Job executing on host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=startd_4884_e90b>
+...
+006 (188933.000.000) 2025-09-08 02:54:23 Image size of job updated: 730588
+	212  -  MemoryUsage of job (MB)
+	216576  -  ResidentSetSize of job (KB)
+...
+006 (188933.000.000) 2025-09-08 02:59:21 Image size of job updated: 921280
+	212  -  MemoryUsage of job (MB)
+	217084  -  ResidentSetSize of job (KB)
+...
+040 (188933.000.000) 2025-09-08 02:59:21 Started transferring output files
+...
+040 (188933.000.000) 2025-09-08 02:59:21 Finished transferring output files
+...
+005 (188933.000.000) 2025-09-08 02:59:21 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:03:18, Sys 0 00:00:05  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:03:18, Sys 0 00:00:05  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1952  -  Run Bytes Sent By Job
+	33636  -  Run Bytes Received By Job
+	1952  -  Total Bytes Sent By Job
+	33636  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.68        1         1 
+	   Disk (KB)            :   899          35   1567297 
+	   Memory (MB)          :   212           1       128 
+
+	Job terminated of its own accord at 2025-09-08T06:59:21Z with exit-code 0.
+...
+000 (188934.000.000) 2025-09-08 03:08:09 Job submitted from host: <192.168.1.120:9618?addrs=192.168.1.120-9618&alias=ruhex-hn2.hexfarm.rutgers.edu&noUDP&sock=schedd_6240_b30f>
+...
+040 (188934.000.000) 2025-09-08 03:08:24 Started transferring input files
+	Transferring to host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=slot1_3_4887_1560_164209>
+...
+040 (188934.000.000) 2025-09-08 03:08:24 Finished transferring input files
+...
+001 (188934.000.000) 2025-09-08 03:08:25 Job executing on host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=startd_4884_e90b>
+...
+006 (188934.000.000) 2025-09-08 03:08:35 Image size of job updated: 644256
+	263  -  MemoryUsage of job (MB)
+	269108  -  ResidentSetSize of job (KB)
+...
+006 (188934.000.000) 2025-09-08 03:12:03 Image size of job updated: 921004
+	263  -  MemoryUsage of job (MB)
+	269276  -  ResidentSetSize of job (KB)
+...
+040 (188934.000.000) 2025-09-08 03:12:03 Started transferring output files
+...
+040 (188934.000.000) 2025-09-08 03:12:03 Finished transferring output files
+...
+005 (188934.000.000) 2025-09-08 03:12:03 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:03:19, Sys 0 00:00:04  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:03:19, Sys 0 00:00:04  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	2145  -  Run Bytes Sent By Job
+	33700  -  Run Bytes Received By Job
+	2145  -  Total Bytes Sent By Job
+	33700  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :      893       35   1567297 
+	   Memory (MB)          :      263        1       128 
+
+	Job terminated of its own accord at 2025-09-08T07:12:03Z with exit-code 0.
+...
+000 (188935.000.000) 2025-09-08 03:17:22 Job submitted from host: <192.168.1.120:9618?addrs=192.168.1.120-9618&alias=ruhex-hn2.hexfarm.rutgers.edu&noUDP&sock=schedd_6240_b30f>
+...
+040 (188935.000.000) 2025-09-08 03:17:22 Started transferring input files
+	Transferring to host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=slot1_3_4887_1560_164210>
+...
+040 (188935.000.000) 2025-09-08 03:17:22 Finished transferring input files
+...
+001 (188935.000.000) 2025-09-08 03:17:24 Job executing on host: <192.168.1.30:9618?addrs=192.168.1.30-9618&alias=node29.hexfarm.rutgers.edu&noUDP&sock=startd_4884_e90b>
+...
+006 (188935.000.000) 2025-09-08 03:17:32 Image size of job updated: 296344
+	290  -  MemoryUsage of job (MB)
+	296344  -  ResidentSetSize of job (KB)
+...
+006 (188935.000.000) 2025-09-08 03:20:46 Image size of job updated: 921004
+	290  -  MemoryUsage of job (MB)
+	296372  -  ResidentSetSize of job (KB)
+...
+040 (188935.000.000) 2025-09-08 03:20:46 Started transferring output files
+...
+040 (188935.000.000) 2025-09-08 03:20:46 Finished transferring output files
+...
+005 (188935.000.000) 2025-09-08 03:20:46 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:03:18, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:03:18, Sys 0 00:00:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1875  -  Run Bytes Sent By Job
+	33712  -  Run Bytes Received By Job
+	1875  -  Total Bytes Sent By Job
+	33712  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        1         1 
+	   Disk (KB)            :   899          35   1567297 
+	   Memory (MB)          :   290           1       128 
+
+	Job terminated of its own accord at 2025-09-08T07:20:46Z with exit-code 0.
+...

@@ -1,0 +1,2 @@
+WARNING: In non-interactive mode release checks e.g. deprecated releases, production architectures are disabled.
+Info in <TCanvas::MakeDefCanvas>:  created default TCanvas with name c1
