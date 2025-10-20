@@ -147,8 +147,6 @@ df7 = df7.Define("muon_indices", "InvMassVector[0].first") \
          .Define("Z_phi", "(float)z_p4.Phi()") \
 
 # --- histograms ---
-h_ptw   = df7.Histo1D(("ptw",   "pT weight distribution;pT weight;Events", 100, 0, 5), "ptw")
-h_genZ  = df7.Histo1D(("genZpt_rew", "Generator-level Z p_{T};p_{T} [GeV];Weighted Events", 50, 0, 200), "genZpt", "weight_total")
 h_m     = df7.Histo1D(("InvMass", "Invariant Mass;M_{#mu#mu} [GeV];Events", 60, 60, 120), "InvMass", "weight_total")
 h_pt    = df7.Histo1D(("Z_pt", "Z boson p_{T};p_{T} [GeV];Events", 100, 0, 200), "Z_pt", "weight_total")
 h_eta   = df7.Histo1D(("Z_eta", "Z boson #eta;#eta;Events", 60, -5, 5), "Z_eta", "weight_total")
