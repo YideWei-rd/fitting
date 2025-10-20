@@ -1,8 +1,15 @@
 #include <ROOT/RVec.hxx>
 #include "TMath.h"
 #include <TLorentzVector.h>
-#include "TMath.h"
-// #include "plot.h"
+#include <vector>
+#include <cmath>
+#include <iostream>
+#include "Math/Vector4D.h"
+#include "TFile.h"
+#include "TH1D.h"
+#include "TTree.h" 
+using namespace ROOT::VecOps;
+using namespace ROOT::Math;
 
 typedef std::vector<float>* vpF;
 typedef std::vector<int>* vpI;
@@ -408,3 +415,72 @@ int numOfTrigMuons(std::vector<int> &trigMuInd, int mu1Idx, int mu2Idx) {
   }
   return numOfTrigMu;
 }
+
+
+
+//  Calculates the 4-vector of the Z boson from two muon indices.
+PtEtaPhiMVector get_z_p4(
+    const std::pair<unsigned int, unsigned int>& indices,
+    const ROOT::RVec<float>& pt,
+    const ROOT::RVec<float>& eta,
+    const ROOT::RVec<float>& phi
+) {
+    // Muon mass in GeV/c^2
+    const float muon_mass = 0.1056583745; 
+    PtEtaPhiMVector p1(pt[indices.first], eta[indices.first], phi[indices.first], muon_mass);
+    PtEtaPhiMVector p2(pt[indices.second], eta[indices.second], phi[indices.second], muon_mass);
+    return p1 + p2;
+}
+
+// Global static variables for histogram access
+static TFile* __pt_file__ = nullptr;
+static TH1D* __pt_hist__ = nullptr;
+
+// Initializes the global Z pT weighting histogram.
+void init_pt_hist(const char* filename, const char* histname) {
+    if(__pt_file__) return;
+    __pt_file__ = TFile::Open(filename);
+    if(!__pt_file__) {
+        std::cerr << "init_pt_hist: ERROR - cannot open file: " << filename << std::endl;
+        return;
+    }
+    __pt_hist__ = dynamic_cast<TH1D*>(__pt_file__->Get(histname));
+    if(!__pt_hist__) {
+        std::cerr << "init_pt_hist: ERROR - cannot find histogram '" << histname
+                  << "' in file: " << filename << std::endl;
+    } else {
+        std::cout << "init_pt_hist: loaded histogram '" << histname
+                  << "' (" << __pt_hist__->GetNbinsX() << " bins, x-range "
+                  << __pt_hist__->GetXaxis()->GetXmin() << " - "
+                  << __pt_hist__->GetXaxis()->GetXmax() << ")." << std::endl;
+    }
+}
+
+
+ //Retrieves the weight for a given Z boson pT from the initialized histogram.
+double getPtWeight(double zpt) {
+    if(!__pt_hist__) return 1.0;
+    if(zpt < 0.0) return 1.0;
+    
+    int bin = __pt_hist__->FindBin(zpt);
+    int nbins = __pt_hist__->GetNbinsX();
+    if(bin < 1) bin = 1;
+    if(bin > nbins) bin = nbins;
+    
+    double w = __pt_hist__->GetBinContent(bin);
+    if(std::isnan(w) || std::isinf(w)) return 1.0;
+    
+    return w;
+}
+
+
+ // Finds the maximum pT of generator-level prompt particles (ROOT RVec overload).
+double getGenZpt(const ROOT::VecOps::RVec<float>& v) {
+    if(v.empty()) return -1.0;
+    double m = v[0];
+    for(size_t i = 1; i < v.size(); ++i) {
+        if(v[i] > m) m = v[i];
+    }
+    return m;
+}
+
