@@ -76,7 +76,7 @@ bool select_goodvertices(int i,
 bool sumpt_filter(int i,
                   const ROOT::VecOps::RVec<float> &sumpt, 
                   const ROOT::VecOps::RVec<float> &vectorsumpt) {
-  if (sumpt[i] > 20. && vectorsumpt[i]/sumpt[i] >= 0.4) return true;
+  if (sumpt[i] > 15. && (vectorsumpt[i]-15)/sumpt[i] >= 0.05) return true;
   return false;
 }
 
@@ -93,9 +93,11 @@ bool reVertexingFilter(int i,
                        const ROOT::VecOps::RVec<float> &tchi2, const ROOT::VecOps::RVec<int> &tdof) {
   if(c1size[i]>=3 && c2size[i]>=3){
       if(tchi2[i]>0 && c1chi2[i]>0 && c2chi2[i]>0 && tdof[i]>0 && c1dof[i]>0 && c2dof[i]>0){
-          float oneVert = tchi2[i] / tdof[i];
-          float twoVert = (c1chi2[i] + c2chi2[i]) / (c1dof[i] + c2dof[i]);
-          if(oneVert - twoVert >= 10*sqrt(2)) return true;
+          //float oneVert = tchi2[i] / tdof[i];
+          //float twoVert = (c1chi2[i] + c2chi2[i]) / (c1dof[i] + c2dof[i]);
+          //if(oneVert - twoVert >= 10*sqrt(2)) return true;
+          double ftest = tchi2[i] / (c1chi2[i] + c2chi2[i]);
+          if((1.0 - TMath::FDistI(ftest, tdof[i], c1dof[i] + c2dof[i])) < 0.01) return true;
       }
   }
   return false;
