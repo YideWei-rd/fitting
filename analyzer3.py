@@ -4,7 +4,7 @@ import time
 import sys
 start_time = time.time()
 ROOT.gROOT.SetBatch(True)
-#ROOT.ROOT.EnableImplicitMT(16)
+#ROOT.ROOT.EnableImplicitMT(64)
 
 treename = "rootTupleTreeVeryLoose/tree"
 
@@ -55,8 +55,13 @@ df = df.Filter("doTrigsMatch", "One trigger must match to vertex")
 df = df.Define("rejectedVertices", "create_listOfRejectedVertices(IsGoodRecoVertex, SumPt, VectorSumPt, VLTrackNByVert, \
                                                                   Cluster1Size, Cluster2Size, Cluster1Chi2, Cluster1DoF, Cluster2Chi2, Cluster2DoF, TotalChi2, TotalDoF, \
                                                                   TriggerPt, TriggerEta, TriggerPhi, VLMuonPt, VLMuonEta, VLMuonPhi, MuonVertInd)")
-df = df.Define("rejectedVertices_size","rejectedVertices.size()")
-df = df.Filter("rejectedVertices_size > 0","rejectedVertices_size > 0")
+
+#df = df.Define("rejectedVertices_size","rejectedVertices.size()")
+#df = df.Filter("rejectedVertices_size > 0","rejectedVertices_size > 0")
+
+
+df = df.Define("AcceptedVertices","std::count(rejectedVertices.begin(), rejectedVertices.end(), false)")
+df = df.Filter("AcceptedVertices > 0","AcceptedVertices > 0")
 
 # reject vertices plots
 # df = df.Define("numRejectedVertices","std::count(rejectedVertices.begin(), rejectedVertices.end(), true)")
@@ -94,7 +99,7 @@ df = df.Filter("pairsMuonsPtAsymmetry_size > 0","pairsMuonsPtAsymmetry_size > 0"
 # Creates a vector called SelectedPairsOpCharge that holds the pairs of indices of tracks that have opposite charge
 df = df.Define("SelectedPairsOpCharge","idx_0f_trackpairs_opcharge(pairsMuonsPtAsymmetry, VLMuonCharge)")
 df = df.Define("NumOfPairsTracksOpCharge","SelectedPairsOpCharge.size()")
-df = df.Define("SelectedPairsSsCharge","idx_0f_trackpairs_sscharge(pairsMuonsPtAsymmetry, VLMuonCharge)")
+df = df.Define("SelectedPairsSsCharge","idx_0f_trackpairs_samecharge(pairsMuonsPtAsymmetry, VLMuonCharge)")
 df = df.Define("NumOfPairsTracksSpCharge","SelectedPairsSsCharge.size()")
 df1 = df.Filter("NumOfPairsTracksSpCharge > 0","num of pairs sp charge > 0")
 df = df.Filter("NumOfPairsTracksOpCharge > 0","num of pairs op charge > 0")
@@ -108,7 +113,7 @@ mass_ss_hist = df1.Histo1D(("Mass_SameSignPairs", "Mass_bkg", 120, 0, 120), "Dim
 df = df.Define("InvMassVector","track_inv_mass(SelectedPairsOpCharge, VLMuonPt, VLMuonEta, VLMuonPhi)")
 df = df.Define("InvMass","InvMassVector[0].second")
 invmass = df.Histo1D(("InvMass","InvMass", 120, 0, 120), "InvMass")
-df = df.Filter("InvMass >= 80 && InvMass <= 100","80 <=InvMass <= 100")
+df = df.Filter("InvMass >= 80 && InvMass <= 100","80 <= InvMass <= 100")
 
 h=[invmass, mass_ss_hist] # this is the list to hold our histos, for easier plotting later.
 

@@ -76,7 +76,7 @@ bool select_goodvertices(int i,
 bool sumpt_filter(int i,
                   const ROOT::VecOps::RVec<float> &sumpt, 
                   const ROOT::VecOps::RVec<float> &vectorsumpt) {
-  if (sumpt[i] > 15. && (vectorsumpt[i]-15)/sumpt[i] >= 0.05) return true;
+  if ((vectorsumpt[i]-15)/sumpt[i] >= 0.05) return true;
   return false;
 }
 
