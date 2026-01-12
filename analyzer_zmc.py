@@ -47,8 +47,8 @@ report = df.Report()
 df = df.Define("rejectedVertices", "create_listOfRejectedVertices(IsGoodRecoVertex, SumPt, VectorSumPt, VLTrackNByVert, \
                                                                   Cluster1Size, Cluster2Size, Cluster1Chi2, Cluster1DoF, Cluster2Chi2, Cluster2DoF, TotalChi2, TotalDoF, \
                                                                   VLMuonPt, VLMuonEta, VLMuonPhi, MuonVertInd)")
-df = df.Define("rejectedVertices_size","rejectedVertices.size()")
-df = df.Filter("rejectedVertices_size > 0","rejectedVertices_size > 0")
+df = df.Define("acceptedVertices_size","std::count(rejectedVertices.begin(), rejectedVertices.end(), false)")
+df = df.Filter("acceptedVertices_size > 0","acceptedVertices_size > 0")
 
 
 
